@@ -1,0 +1,10 @@
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\bin\Debug\Laboratory_work_2.exe.config
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\bin\Debug\Laboratory_work_2.exe
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\bin\Debug\Laboratory_work_2.pdb
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.csproj.AssemblyReference.cache
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.Form1.resources
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.Properties.Resources.resources
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.csproj.GenerateResource.cache
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.csproj.CoreCompileInputs.cache
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.exe
+C:\Users\sasha\source\repos\Laboratory_work_2\Laboratory_work_2\obj\Debug\Laboratory_work_2.pdb
