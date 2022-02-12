@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace Laboratory_work_3
 {
@@ -37,7 +30,7 @@ namespace Laboratory_work_3
             for (int i = 0; i < N; i++)
             {
                 Stopwatch iterationTimeArray = new Stopwatch(), iterationTimeDicrionary = new Stopwatch();
-                
+
                 string name = "Library_" + rnd.Next();
                 string street = "Street_" + rnd.Next();
                 string librarian = "Librarian_" + rnd.Next();
@@ -62,22 +55,22 @@ namespace Laboratory_work_3
             allTimeArray2.Start();
             for (int i = 0; i < N; i++)
                 temp = librariesArray[i];
-                allTimeArray2.Stop();
+            allTimeArray2.Stop();
             allTimeDicrionary2.Start();
             foreach (var pair in librariesDictionary)
-                temp  = pair.Value;
+                temp = pair.Value;
             allTimeDicrionary2.Stop();
 
             // Случайная выборка
-            Stopwatch allTimeArray3 = new Stopwatch(), allTimeDicrionary3 = new Stopwatch();
+            Stopwatch allTimeArray3 = new Stopwatch(), allTimeDictionary3 = new Stopwatch();
             allTimeArray3.Start();
             for (int i = 0; i < N; i++)
                 temp = librariesArray[rnd.Next(0, N)];
             allTimeArray3.Stop();
-            allTimeDicrionary3.Start();
+            allTimeDictionary3.Start();
             foreach (var pair in librariesDictionary)
                 temp = pair.Value;
-            allTimeDicrionary3.Stop();
+            allTimeDictionary3.Stop();
 
             // Формирование таблицы
             ListViewItem lv1 = new ListViewItem();
@@ -93,7 +86,7 @@ namespace Laboratory_work_3
             ListViewItem lv3 = new ListViewItem();
             lv3.Text = "Случайная выборка";
             lv3.SubItems.Add(allTimeArray3.ElapsedTicks.ToString());
-            lv3.SubItems.Add(allTimeDicrionary3.ElapsedTicks.ToString());
+            lv3.SubItems.Add(allTimeDictionary3.ElapsedTicks.ToString());
 
             listView1.Items[0] = lv1;
             listView1.Items[1] = lv2;
@@ -119,7 +112,7 @@ namespace Laboratory_work_3
             if (libraries.Count == 0)
                 textBox4.Text = "Библиотек не обнаружено";
             else foreach (var pair in libraries)
-                textBox4.Text += pair.Value.ToString() + Environment.NewLine + Environment.NewLine;
+                    textBox4.Text += pair.Value.ToString() + Environment.NewLine + Environment.NewLine;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -137,6 +130,6 @@ namespace Laboratory_work_3
             ShowLibraries();
         }
 
-  
+
     }
 }

@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Laboratory_work_1
 {
-    class Library 
+    class Library
     {
-        public string Name;
-        public string Street;
-        public string Librarian;
-        public int NumberOfBooks;
-        public int NumberOfHalls;
-        public int NumberOfSeatsInTheHall;
-        public float VisitorsPerDay;
+        public string Name { get; set; }
+        public string Street { get; set; }
+        public string Librarian { get; set; }
+        public int NumberOfBooks { get; set; }
+        public int NumberOfHalls { get; set; }
+        public int NumberOfSeatsInTheHall { get; set; }
+        public float VisitorsPerDay { get; set; }
 
         public Library()
         {
@@ -58,19 +53,6 @@ namespace Laboratory_work_1
             VisitorsPerDay = visitors;
         }
 
-        public void SetName(string name) {
-            Name = name;
-        }
-        public void SetNumberOfBooks(int books)
-        {
-            NumberOfBooks = books;
-        }
-
-        public void SetVisitorsPerDay(float visitors)
-        {
-            VisitorsPerDay = visitors;
-        }
-
         public override string ToString()
         {
             return $"Library name: {Name}\n" +
@@ -81,7 +63,8 @@ namespace Laboratory_work_1
                    $"Number of seats in the hall: {NumberOfSeatsInTheHall}\n" +
                    $"Average number of visitors per day: {VisitorsPerDay}\n\n";
         }
-        public void ShowName() {
+        public void ShowName()
+        {
             Console.WriteLine("Library name: " + Name);
         }
     }

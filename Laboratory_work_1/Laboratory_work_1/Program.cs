@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Laboratory_work_1
 {
-    class Program {
+    class Program
+    {
         static void Main(string[] args)
         {
             Console.WriteLine("Лабораторная работа № 1.\nКласс. Создание объекта. Работа с консолью\nВариант 1\nАгапова, Кудашов\n\n");
@@ -62,17 +59,17 @@ namespace Laboratory_work_1
                             case 1:
                                 Console.WriteLine("Введите новое значение названия библиотеки");
                                 string name = Console.ReadLine();
-                                lib.SetName(name);
+                                lib.Name = name;
                                 break;
                             case 2:
                                 Console.WriteLine("Введите новое значение количества книг в библиотеке");
                                 int books = Convert.ToInt32(Console.ReadLine());
-                                lib.SetNumberOfBooks(books);
+                                lib.NumberOfBooks = books;
                                 break;
                             case 3:
                                 Console.WriteLine("Введите новое значение среднего количества посетителей в день");
-                                float visitors = (float) Convert.ToDouble(Console.ReadLine());
-                                lib.SetVisitorsPerDay(visitors);
+                                float visitors = (float)Convert.ToDouble(Console.ReadLine());
+                                lib.VisitorsPerDay = visitors;
                                 break;
                         }
                         break;

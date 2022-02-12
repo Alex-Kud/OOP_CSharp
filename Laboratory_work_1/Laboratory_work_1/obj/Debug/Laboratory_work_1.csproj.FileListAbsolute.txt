@@ -5,3 +5,10 @@ C:\Users\sasha\source\repos\Laboratory_work_1\Laboratory_work_1\obj\Debug\Labora
 C:\Users\sasha\source\repos\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.csproj.CoreCompileInputs.cache
 C:\Users\sasha\source\repos\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.exe
 C:\Users\sasha\source\repos\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.pdb
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\bin\Debug\Laboratory_work_1.exe.config
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\bin\Debug\Laboratory_work_1.exe
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\bin\Debug\Laboratory_work_1.pdb
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.csproj.AssemblyReference.cache
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.csproj.CoreCompileInputs.cache
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.exe
+C:\Users\sasha\OneDrive\Рабочий стол\OOP_CSharp-main\Laboratory_work_1\Laboratory_work_1\obj\Debug\Laboratory_work_1.pdb

@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Laboratory_work_2
@@ -26,14 +20,15 @@ namespace Laboratory_work_2
         {
             int selected = comboBox1.SelectedIndex;
             if (selected == -1) return;
-            libraries[selected].SetName(textBox1.Text);
-            libraries[selected].SetStreet(textBox2.Text);
-            libraries[selected].SetLibrarian(textBox3.Text);
-            libraries[selected].SetNumberOfBooks((int)numericUpDown1.Value);
-            libraries[selected].SetNumberOfHalls((int)numericUpDown2.Value);
-            libraries[selected].SetNumberOfSeatsInTheHall((int)numericUpDown3.Value);
-            libraries[selected].SetVisitorsPerDay((float)numericUpDown4.Value);
+            libraries[selected].Name = textBox1.Text;
+            libraries[selected].Street = textBox2.Text;
+            libraries[selected].Librarian = textBox3.Text;
+            libraries[selected].NumberOfBooks = (int)numericUpDown1.Value;
+            libraries[selected].NumberOfHalls = (int)numericUpDown2.Value;
+            libraries[selected].NumberOfSeatsInTheHall = (int)numericUpDown3.Value;
+            libraries[selected].VisitorsPerDay = (float)numericUpDown4.Value;
             label2.Text = libraries[selected].ToString();
+            ChangeComboBox1();
         }
 
 
