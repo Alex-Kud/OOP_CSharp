@@ -1,0 +1,10 @@
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\bin\Debug\Laboratory_work_4.exe.config
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\bin\Debug\Laboratory_work_4.exe
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\bin\Debug\Laboratory_work_4.pdb
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.csproj.AssemblyReference.cache
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.Form1.resources
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.Properties.Resources.resources
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.csproj.GenerateResource.cache
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.csproj.CoreCompileInputs.cache
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.exe
+C:\Users\sasha\source\repos\Laboratory_work_4\Laboratory_work_4\obj\Debug\Laboratory_work_4.pdb
