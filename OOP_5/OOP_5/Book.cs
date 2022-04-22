@@ -3,6 +3,9 @@ using System.Windows.Forms;
 
 namespace OOP_5
 {
+    /// <summary>
+    /// Класс сущности книга
+    /// </summary>
     public abstract class Book
     {
         public string Author { get; set; }
@@ -17,10 +20,24 @@ namespace OOP_5
         }*/
     }
 
+    /// <summary>
+    /// Класс сущности учебник
+    /// </summary>
     class Textbook : Book
     {
         public string Subject { get; set; }
         public int Class { get; set; }
+
+        /// <summary>
+        /// конструктор с параметрами
+        /// </summary>
+        /// <param name="author">Автор</param>
+        /// <param name="title">Название</param>
+        /// <param name="publisher">Издательство</param>
+        /// <param name="year">Год издания</param>
+        /// <param name="type">Тип книги</param>
+        /// <param name="subject">Предмет</param>
+        /// <param name="clas">Класс</param>
         public Textbook(string author, string title, string publisher, int year, string type, string subject, int clas)
         {
             Author = author;
@@ -31,6 +48,10 @@ namespace OOP_5
             Subject = subject;
             Class = clas;
         }
+
+        /// <summary>
+        /// Чтение книги
+        /// </summary>
         public void ReadBook()
         {
             MessageBox.Show(
@@ -42,6 +63,11 @@ namespace OOP_5
                 MessageBoxDefaultButton.Button1,
                 MessageBoxOptions.DefaultDesktopOnly);
         }
+
+        /// <summary>
+        /// Информация об объекте класса
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Автор: {Author}" + Environment.NewLine +
@@ -54,10 +80,24 @@ namespace OOP_5
         }
     }
 
+    /// <summary>
+    /// Класс сущности художественная книга
+    /// </summary>
     class ArtBook : Book
     {
         public string Genre { get; set; }
         public string MainCharacter { get; set; }
+
+        /// <summary>
+        /// Конструктор с параметрами
+        /// </summary>
+        /// <param name="author">Автор</param>
+        /// <param name="title">Название</param>
+        /// <param name="publisher">Издательство</param>
+        /// <param name="year">Год издания</param>
+        /// <param name="type">Тип книги</param>
+        /// <param name="genre">Жанр</param>
+        /// <param name="mainCharacter">Главный герой</param>
         public ArtBook(string author, string title, string publisher, int year, string type, string genre, string mainCharacter)
         {
             Author = author;
@@ -69,6 +109,9 @@ namespace OOP_5
             MainCharacter = mainCharacter;
         }
 
+        /// <summary>
+        /// Чтение книги
+        /// </summary>
         public void ReadBook()
         {
             MessageBox.Show(
@@ -80,6 +123,11 @@ namespace OOP_5
                 MessageBoxDefaultButton.Button1,
                 MessageBoxOptions.DefaultDesktopOnly);
         }
+
+        /// <summary>
+        /// Информация об объекте класса
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Автор: {Author}" + Environment.NewLine +

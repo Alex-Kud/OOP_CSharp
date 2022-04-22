@@ -8,15 +8,18 @@ namespace OOP_5
 {
     public class Library
     {
-        public string Name { get; set; }
-        public string Street { get; set; }
-        public string Librarian { get; set; }
-        public int NumberOfBooks { get; set; }
-        public int NumberOfHalls { get; set; }
-        public int NumberOfSeatsInTheHall { get; set; }
-        public float VisitorsPerDay { get; set; }
+        public string Name { get; private set; }
+        public string Street { get; private set; }
+        public string Librarian { get; private set; }
+        public int NumberOfBooks { get; private set; }
+        public int NumberOfHalls { get; private set; }
+        public int NumberOfSeatsInTheHall { get; private set; }
+        public float VisitorsPerDay { get; private set; }
         public static int QuantityLibraries = 0;
         public List<Book> Books = new List<Book>();
+        /// <summary>
+        /// Конструктор без параметров
+        /// </summary>
         public Library()
         {
             Name = "Неизвестно";
@@ -28,6 +31,15 @@ namespace OOP_5
             VisitorsPerDay = 0f;
             QuantityLibraries++;
         }
+        /// <summary>
+        /// Конструктор c параметрами
+        /// </summary>
+        /// <param name="name">Название библиотеки</param>
+        /// <param name="street">Адрес</param>
+        /// <param name="librarian">Библиотекарь</param>
+        /// <param name="halls">Количество читальных залов</param>
+        /// <param name="seats">Количество мест в читальных залах</param>
+        /// <param name="visitors">Среднее количество посетителей</param>
         public Library(string name, string street, string librarian, int halls, int seats, float visitors)
         {
             Name = name;
@@ -40,6 +52,10 @@ namespace OOP_5
             QuantityLibraries++;
         }
 
+        /// <summary>
+        /// Информация об объекте класса
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Название: {Name}" + Environment.NewLine +
@@ -50,11 +66,21 @@ namespace OOP_5
                    $"Количество мест в зале: {NumberOfSeatsInTheHall}" + Environment.NewLine +
                    $"Среднее количество посетителей в день: {VisitorsPerDay}" + Environment.NewLine + Environment.NewLine;
         }
+
+        /// <summary>
+        /// Вывод имени библиотеки
+        /// </summary>
         public void ShowName()
         {
             Console.WriteLine("Название библиотеки: " + Name);
         }
 
+        /// <summary>
+        /// Добавление книги в библиотеку
+        /// </summary>
+        /// <param name="lib">Библиотека</param>
+        /// <param name="book">Книга</param>
+        /// <returns></returns>
         public static Library operator +(Library lib, Book book)
         {
             if (!lib.Books.Any(b => b.Title == book.Title 
@@ -75,6 +101,13 @@ namespace OOP_5
             }
             return lib;
         }
+
+        /// <summary>
+        /// Удаление книги из библиотеки
+        /// </summary>
+        /// <param name="lib">Библиотека</param>
+        /// <param name="book">Книга</param>
+        /// <returns></returns>
         public static Library operator -(Library lib, Book book)
         {
             lib.Books.Remove(book);

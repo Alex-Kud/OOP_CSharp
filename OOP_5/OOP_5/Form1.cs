@@ -30,7 +30,12 @@ namespace OOP_5
             label1.Text = demoLibrary.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Добавление книги
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button2_Click(object sender, EventArgs e) 
         {
             int selected = comboBox1.SelectedIndex; // 0 - учебник, 1 - книга
             string author = textBox3.Text;
@@ -163,11 +168,11 @@ namespace OOP_5
             string author = Path.GetRandomFileName();
             string title = Path.GetRandomFileName();
             string publisher = Path.GetRandomFileName();
-            int year = rnd.Next(1900, 2023);
+            int year = rnd.Next(1900, 2024);
             if (type == 0)
             {
                 string subject = Path.GetRandomFileName();
-                int clas = rnd.Next(1, 11);
+                int clas = rnd.Next(1, 12);
                 Book book = new Textbook(author, title, publisher, year, "Учебник", subject, clas);
                 demoLibrary += book;
             }
